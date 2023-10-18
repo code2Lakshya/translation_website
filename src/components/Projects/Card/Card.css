@@ -1,0 +1,64 @@
+.card{
+    width: 30%;
+    display: flex;
+    background-color: rgb(218, 212, 212,0.3);
+    padding: 15px;
+    border-radius: 15px;
+    gap: 10px;
+    user-select: none;
+    cursor: pointer;
+}
+.card .card-icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+    flex-shrink: 0;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card .card-item {
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.card-item h1{
+    font-size: 20px;
+    color: white;
+}
+.card .card-item p{
+    text-align: start;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    opacity: 0.7;
+}
+.card:hover{
+    outline: 2px solid red;
+    opacity: 0.9;
+    transition: all 0.3s;
+}
+.card:hover .card-icon{
+    background-color: red;
+    color: white;
+    transition: all 0.3s;
+}
+@media screen and (max-width: 1000px) {
+    .card{
+        width: 46%;
+    }
+}
+@media screen and (max-width: 760px) {
+    .card{
+        width: 100%;
+    }
+    .card-item h1{
+        font-size: 18px;
+    }
+    .card .card-item p{
+        font-size: 15px;
+    }
+}

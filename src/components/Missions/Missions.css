@@ -1,0 +1,80 @@
+#about{
+    width: 100%;
+    padding: 50px 20px 0;
+    background-image: url('https://www.tridindia.com/wp-content/uploads/2020/12/bg-section-01.png');
+    background-repeat: no-repeat;
+    margin: 40px 0 0;
+}
+.about-wrapper{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap:50px;
+    margin-top: 30px;
+}
+.about-wrapper .lazy-load-image-background{
+    width: 35%;
+    aspect-ratio: 1/1.25;
+    overflow: hidden;
+    flex-shrink: 0;
+    border-radius: 20px;
+}
+.lazy-load-image-background img{
+    width: 100%;
+    height: 100%;
+}
+.about-content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}
+.about-content::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 4px;
+    background-color: black;
+    border-radius: 5px;
+}
+.about-content h1{
+    font-size: 40px;
+    margin-top: 15px;
+    font-weight: 700;
+    line-height: 1.333;
+}
+.about-content p{
+    font-size: 20px;
+    line-height: 34px;
+    color: rgb(110, 108, 108);
+}
+@media screen and (max-width: 1000px) {
+    #about .lazy-load-image-background{
+        width: 45%;
+        aspect-ratio: unset;
+        height: 500px;
+    }
+}
+@media screen and (max-width: 760px) {
+    .about-wrapper{
+        flex-direction: column-reverse;
+    }
+    #about .lazy-load-image-background{
+        width: 100%;
+        max-width: 400px;
+        height: 500px;
+        align-self: center;
+    }
+    .about-content h1{
+        font-size: 30px;
+    }
+    .about-content ul{
+        font-size: 18px;
+    }
+    .sbout-content p{
+        font-size: 18px;
+    }
+}
