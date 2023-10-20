@@ -1,10 +1,19 @@
-import { HashLink } from 'react-router-hash-link';
+import { useNavigate } from 'react-router-dom';
 import './Home.css';
+import video from '../../assets/bgvideo.mp4';
+import toast from 'react-hot-toast';
 
 const Home = () => {
 
+    const navigate=useNavigate();
+
+    const shareHandler=(e)=>{
+        navigator.clipboard.writeText('https://aviraldigital.netlify.app ');
+        toast.success('Copied Url');
+    }
     return (
         <section id='home'>
+        <video src={video} autoPlay loop></video>
             <div className='inner-home'>
                 <h1>World Of Words</h1>
                 <p>A Gateway to seamless multilingual communication</p>
@@ -14,8 +23,8 @@ const Home = () => {
                 </p>
             </div>
             <div className='home-btn'>
-                <button>Get a Free Quote</button>
-                <button><HashLink to='#contact'>Contact us</HashLink></button>
+                <button onClick={()=> navigate('/contact')}>Contact Us</button>
+                <button onClick={shareHandler}>Share Now</button>
             </div>
         </section>
     );

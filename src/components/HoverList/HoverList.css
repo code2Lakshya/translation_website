@@ -1,0 +1,59 @@
+.hoverlist-container{
+    position: relative;
+}
+.hoverlist-container > p{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: black;
+    padding-bottom: 25px;
+}
+.hoverlist-container > p:hover{
+    color: purple;
+    transition: color 0.3s;
+}
+.hoverlist-container > p span{
+    display: flex;
+    place-content: center center;
+}
+.hover-list{
+    display: none;
+    position: absolute;
+    color: black;
+    background-color: white;
+    width: max-content;
+    box-shadow: 0px 0px 10px 1px rgb(136, 135, 135);
+    border-radius: 5px;
+    z-index: 5;
+}
+.hover-list.active{
+    display: flex;
+    flex-direction: column;
+    bottom: 2px;
+    left: 50%;
+    transform: translate(-50%,100%);
+    padding-block: 5px;
+}
+.hover-list p span{
+    display: inline-block;
+    padding: 6px 15px;
+    width: 100%;
+}
+.hover-list p:hover{
+    background-color: rgb(136, 135, 135,0.3);
+    color: purple;
+    transition: all 0.3s;
+}
+@media screen and (max-width: 820px)
+{
+    .hover-list.active{
+        display: none;
+    }
+    .hoverlist-container > p{
+        color: white;
+        padding-bottom: 0;
+    }
+    .hoverlist-container > p span{
+        display: none;
+    }
+}

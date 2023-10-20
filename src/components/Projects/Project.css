@@ -23,12 +23,12 @@
     font-size: 40px;
     font-weight: 700;
     line-height: 1.333;
-    color: red;
+    color: purple;
 }
 .projects-heading span{
     height: 20px;
     width: 40px;
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid purple;
     position: relative;
 }
 .projects-heading span::before{
@@ -37,7 +37,7 @@
     top: 0;
     width: 70px;
     height: 2px;
-    background-color: red;
+    background-color: purple;
 }
 .upper::before{
     right: 0;

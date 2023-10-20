@@ -1,0 +1,24 @@
+.loader{
+    width:100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#load{
+    width: 50px;
+    aspect-ratio: 1/1;
+    border: 3px solid purple;
+    border-bottom: none;
+    border-left: none;
+    animation: rotate 2s linear infinite;
+    border-radius: 50%;
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

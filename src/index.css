@@ -7,4 +7,198 @@
 }
 body{
   font-family: 'IBM Plex Sans', sans-serif;
+  overflow-x:hidden;
+}
+.about-heading{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 70px;
+  font-weight: 800;
+  color: white;
+  position: relative;
+  flex-direction: column;
+}
+.about-heading::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.4);
+  z-index: 1;
+}
+.about-heading video{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.about-heading p:first-of-type{
+  position: relative;
+  z-index: 2;
+}
+.about-heading p:last-of-type{
+  position: relative;
+  z-index: 2;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  padding-inline: 20px;
+}
+.content{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 30px;
+  min-height: 530px;
+}
+.content .lazy-load-image-background{
+  width: 35%;
+  aspect-ratio: 1/1.25;
+  overflow: hidden;
+  flex-shrink: 0;
+  border-radius: 20px;
+  max-height: 525px;
+  float: left;
+  margin-right: 30px ;
+  margin-bottom: 30px;
+}
+.content.right .lazy-load-image-background{
+  float: right;
+}
+.lazy-load-image-background img{
+  width: 100%;
+  height: 100%;
+}
+.wrapper{
+  width: 100%;
+  padding: 50px 20px 0;
+  background-image: url('https://www.tridindia.com/wp-content/uploads/2020/12/bg-section-01.png');
+  background-repeat: no-repeat;
+  margin: 40px 0 30px;
+}
+.inner{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: inline;
+  position: relative;
+}
+.about-history{
+  position: relative;
+  z-index: 2;
+}
+.inner h2,
+.about-history h2{
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.333;
+  padding-top: 10px;
+}
+.about-history h2{
+  padding-bottom: 20px;
+  position: relative;
+}
+.inner p{
+  margin-block: 20px;
+  font-size: 20px;
+  line-height: 34px;
+  color: rgb(110, 108, 108);
+  font-weight: 400;
+}
+.about-history p{
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 34px;
+  color: white;
+}
+.inner::before,
+.about-history h2::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 4px;
+  background-color: black;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.about-history h2::before{
+  background-color: white;
+}
+.about-history-wrapper{
+  width: 100%;
+  padding-block: 80px;
+  padding-inline: 20px;
+  background-color: purple;
+  color: white;
+  position: relative;
+}
+.about-history-wrapper .lazy-load-image-background{
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  object-fit: cover;
+}
+.bg::before{
+  content:'';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.6);
+  z-index: 1;
+}
+.about-history{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+}
+@media screen and (max-width: 1150px) {
+  .content .lazy-load-image-background{
+      width: 40%;
+      aspect-ratio: unset;
+      height: 450px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .about-heading{
+    font-size: 40px;
+  }
+  .about-heading p:last-of-type{
+    font-size: 18px;
+  }
+  .content{
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+  }
+  .content .lazy-load-image-background{
+      width: 100%;
+      max-width: 400px;
+      height: 500px;
+      align-self: center;
+      margin: 0;
+  }
+  .inner h2,
+  .about-history h2{
+      font-size: 30px;
+  }
+  .inner p,
+  .about-history p{
+      font-size: 18px;
+  }
 }

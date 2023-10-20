@@ -37,12 +37,12 @@
     opacity: 0.7;
 }
 .card:hover{
-    outline: 2px solid red;
+    outline: 2px solid purple;
     opacity: 0.9;
     transition: all 0.3s;
 }
 .card:hover .card-icon{
-    background-color: red;
+    background-color: purple;
     color: white;
     transition: all 0.3s;
 }
@@ -51,7 +51,7 @@
         width: 46%;
     }
 }
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 820px) {
     .card{
         width: 100%;
     }
