@@ -92,6 +92,9 @@ body{
   display: inline;
   position: relative;
 }
+.about-history-wrapper{
+  margin-block: 50px ;
+}
 .about-history{
   position: relative;
   z-index: 2;
