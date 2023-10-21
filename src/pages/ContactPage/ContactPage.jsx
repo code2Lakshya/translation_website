@@ -23,7 +23,7 @@ const ContactPage = () => {
     }
     const submitHandler=(e)=>{
         e.preventDefault();
-        setUserInput({ firstName: '', lastName: '', email: '', phone: null, message: '' });
+        setUserInput({ firstName: '', lastName: '', email: '', phone: '', message: '' });
         toast.success('Form Submitted');
     }
 
