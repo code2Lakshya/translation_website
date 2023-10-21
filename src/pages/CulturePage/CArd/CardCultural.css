@@ -37,13 +37,15 @@
 }
 
 .value-card p:last-of-type span {
-    color: red;
+    color: black;
     display: inline-flex;
     place-items: center center;
+    font-weight: 600;
 }
 
 .value-card p:last-of-type span:hover {
-    color: purple;
+    color: red;
+    text-decoration: underline;
     transition: color 0.3s;
 }
 

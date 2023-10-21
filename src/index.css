@@ -71,6 +71,8 @@ body{
 }
 .content.right .lazy-load-image-background{
   float: right;
+  margin-right: 0;
+  margin-left: 30px;
 }
 .lazy-load-image-background img{
   width: 100%;
@@ -192,6 +194,9 @@ body{
       height: 500px;
       align-self: center;
       margin: 0;
+  }
+  .content.right .lazy-load-image-background{
+    margin-left: 0;
   }
   .inner h2,
   .about-history h2{
