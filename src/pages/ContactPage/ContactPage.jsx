@@ -22,15 +22,9 @@ const ContactPage = () => {
         setUserInput(prev => ({ ...prev, [e.target.name]: e.target.value }));
     }
     const submitHandler=(e)=>{
-        e.preventDefault();
-        fetch("/", {
-            method: "POST",
-            headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: JSON.stringify(userInput)
-          })
-            .then(() => toast.success('Form Submitted'))
-            .catch((error) => alert(error));
         setUserInput({ firstName: '', lastName: '', email: '', phone: '', message: '' });
+        e.preventDefault();
+        toast.success('form submitted');
     }
     return (
         <div className="contact-conatiner">
@@ -54,7 +48,7 @@ const ContactPage = () => {
 
                         <div className='contact-form'>
                             <h2>Send us a message</h2>
-                            <form onSubmit={submitHandler} data-netlify='true'>
+                            <form onSubmit={submitHandler}>
                                 <div className='top formfield'>
                                     <div className='first-name name'>
                                         <label htmlFor='firstName'>First Name:</label>
