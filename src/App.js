@@ -4,6 +4,7 @@ import Footer from './components/Footer/Footer';
 import { Route, Routes } from 'react-router-dom';
 import { Suspense, lazy } from 'react';
 import Loader from './components/loader/Loader';
+import ErrorPage from './pages/ErrorPage/ErrorPage';
 
 const AboutPage = lazy(() => import('./pages/AboutPage/AboutPage'));
 const ServicesPage = lazy(() => import('./pages/ServicesPage/ServicesPage'));
@@ -24,7 +25,7 @@ function App() {
         <Route path='/mission' element={<Suspense fallback={<Loader />}><MissionPage /></Suspense>} />
         <Route path='/culture' element={<Suspense fallback={<Loader />}><CulturePage /></Suspense>} />
         <Route path='/contact' element={<Suspense fallback={<Loader />}><ContactPage /></Suspense>} />
-        <Route path='*' element={<p>No Such Route Found</p>} />
+        <Route path='*' element={<ErrorPage />} />
       </Routes>
 
       <Footer />

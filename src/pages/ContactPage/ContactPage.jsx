@@ -54,7 +54,7 @@ const ContactPage = () => {
 
                         <div className='contact-form'>
                             <h2>Send us a message</h2>
-                            <form onSubmit={submitHandler} netlify>
+                            <form onSubmit={submitHandler} data-netlify='true'>
                                 <div className='top formfield'>
                                     <div className='first-name name'>
                                         <label htmlFor='firstName'>First Name:</label>
