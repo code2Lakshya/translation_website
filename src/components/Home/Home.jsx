@@ -8,7 +8,7 @@ const Home = () => {
     const navigate=useNavigate();
 
     const shareHandler=(e)=>{
-        navigator.clipboard.writeText('https://aviraldigital.netlify.app ');
+        navigator.clipboard.writeText('www.aviraldigital.in');
         toast.success('Copied Url');
     }
     return (
