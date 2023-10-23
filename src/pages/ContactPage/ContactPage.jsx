@@ -23,10 +23,15 @@ const ContactPage = () => {
     }
     const submitHandler=(e)=>{
         e.preventDefault();
+        fetch("/", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: JSON.stringify(userInput)
+          })
+            .then(() => toast.success('Form Submitted'))
+            .catch((error) => alert(error));
         setUserInput({ firstName: '', lastName: '', email: '', phone: '', message: '' });
-        toast.success('Form Submitted');
     }
-
     return (
         <div className="contact-conatiner">
 
