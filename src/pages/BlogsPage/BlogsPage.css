@@ -1,0 +1,87 @@
+.eLearning{
+    margin-top: 0;
+}
+.challenges-container{
+    width: 100%;
+    padding: 40px 30px;
+    background-color: rgb(213, 210, 210);
+}
+.challenges-wrapper{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+.challenges-wrapper > h1{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.333;
+    padding-top: 10px;
+    position: relative;
+    text-align: center;
+}
+.challenges-wrapper > p{
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.challenge-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+.challenge-card{
+    display: flex;
+    gap:20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.challenge-card:hover{
+    box-shadow: 0 0 30px 1px black;
+}
+.challenge-card span{
+    font-size: 25px;
+    padding: 10px;
+    height: max-content;
+    border-radius: 50%;
+    background-color: rgb(145, 3, 145);
+    font-weight: 500;
+    flex-shrink: 0;
+    color: white;
+}
+.challenge-card .card-content h3{
+    font-size: 28px;
+    font-weight: 900;
+}
+.challenge-card .card-content p{
+    font-size: 18px;
+    color: black;
+    margin-top: 8px;
+}
+@media screen and (max-width: 900px) {
+    .challenge-cards{
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (max-width: 760px) {
+    .challenges-wrapper > h1{
+        font-size: 30px;
+    }
+    .challenges-wrapper > p{
+        font-size: 18px;
+    }
+    .challenge-card span{
+        font-size: 18px;
+        padding: 7px;
+    }
+    .challenge-card .card-content h3{
+        font-size: 18px;
+    }
+    .challenge-card .card-content p{
+        font-size: 15px;
+    }
+}

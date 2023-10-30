@@ -5,13 +5,15 @@ import interpretation from '../../assets/interpretation.jpeg';
 import { useEffect } from "react";
 import logo3 from '../../assets/bg.png';
 import logo4 from '../../assets/cultural.webp';
+import eLearning from '../../assets/eLearning.jpg';
+import lms from '../../assets/lms.webp';
 
 
 const ServicesPage = () => {
 
-    useEffect(()=>{
-        window.scrollTo(0,0);
-    },[])
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
 
     return (
         <div className="sericesPage-container">
@@ -46,7 +48,7 @@ const ServicesPage = () => {
             </section>
 
             <section className='services-localization about-history-wrapper bg' id='localization-services'>
-            <LazyLoadImage src={logo3} alt='logo3' effect="blur" />
+                <LazyLoadImage src={logo3} alt='logo3' effect="blur" />
                 <div className='about-history '>
                     <h2>Localization Services</h2>
                     <p>Successful globalization demands more than mere translation. It requires adapting content,
@@ -65,7 +67,7 @@ const ServicesPage = () => {
             </section>
 
             <section className='services-interpretation wrapper ' id='interpretation-services' >
-                <div className='content'>
+                <div className='content right'>
                     <LazyLoadImage src={interpretation} alt='logo1' effect='blur' />
                     <div className='about-intro inner'>
                         <h2>Interpretation Services</h2>
@@ -77,14 +79,14 @@ const ServicesPage = () => {
                             appointment, our skilled interpreters facilitate seamless cross-cultural communication. We offer both
                             simultaneous and consecutive interpretation services to cater to your specific needs. Our interpreters
                             are not only fluent in multiple languages but also well-versed in various industries, ensuring that
-                            the message is accurately conveyed to all parties involved. 
+                            the message is accurately conveyed to all parties involved.
                         </p>
                     </div>
                 </div>
             </section>
 
             <section className='services-cultural about-history-wrapper bg' id='cultural-consulting'>
-            <LazyLoadImage src={logo4} alt='logo3' effect="blur" />
+                <LazyLoadImage src={logo4} alt='logo3' effect="blur" />
                 <div className='about-history'>
                     <h2>Cultural Consulting</h2>
                     <p>
@@ -96,6 +98,34 @@ const ServicesPage = () => {
                         cultural consultants provide insights and guidance on cultural etiquette, market research, and intercultural
                         communication strategies. This valuable expertise ensures that you make the right impression and gain a
                         competitive edge when expanding into new markets.
+                    </p>
+                </div>
+            </section>
+
+            <section className='services-interpretation wrapper ' id='e-learning' >
+                <div className='content'>
+                    <LazyLoadImage src={eLearning} alt='eLearning' effect='blur' />
+                    <div className='about-intro inner'>
+                        <h2>E-Learning</h2>
+                        <p>
+                            At ADS, we are your partner in the world of online learning and training. Our aim at empowering
+                            individuals and organizations with cutting-edge eLearning solutions. We specialize in creating immersive
+                            and engaging eLearning content, tailored to your specific needs. Our courses are designed to captivate and
+                            educate. We create interactive and effective eLearning courses that enhance skills, improve efficiency and
+                            drive growth.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section className='services-cultural about-history-wrapper bg mb' id='learning-management-system'>
+                <LazyLoadImage src={lms} alt='lms' effect="blur" />
+                <div className='about-history'>
+                    <h2>Learning Management System (L.M.S.)</h2>
+                    <p>
+                        Our Learning Management System simplifies the administration of eLearning. From tracking progress to assessing
+                        performance, we make it all effortless. Our Learning Management System makes training and development
+                        streamlined and efficient. Manage your learners, content and assessments all in one place.
                     </p>
                 </div>
             </section>

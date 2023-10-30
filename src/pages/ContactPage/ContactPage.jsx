@@ -21,7 +21,7 @@ const ContactPage = () => {
     const changeHandler = (e) => {
         setUserInput(prev => ({ ...prev, [e.target.name]: e.target.value }));
     }
-    const submitHandler=(e)=>{
+    const submitHandler = (e) => {
         setUserInput({ firstName: '', lastName: '', email: '', phone: '', message: '' });
         e.preventDefault();
         toast.success('form submitted');
@@ -107,7 +107,11 @@ const ContactPage = () => {
                             <h2>Contact Us</h2>
                             <div className='contact-card'>
                                 <span><CiLocationArrow1 /></span>
-                                <p><span>Aviral Digital Solutions Headquarters </span>[Address] [City, State, Zip Code]</p>
+                                <p>
+                                    Harsh Vikram Vihar Colony
+                                    Christnagar, Chandmari,
+                                    Near Ring Road, Varanasi (UP) - 221003
+                                </p>
                             </div>
                             <div className='contact-card'>
                                 <span><AiOutlineMail /></span>
@@ -115,7 +119,7 @@ const ContactPage = () => {
                             </div>
                             <div className='contact-card'>
                                 <span><AiOutlinePhone /></span>
-                                <p>[Phone Number]</p>
+                                <p>+91 8423638997</p>
                             </div>
                             <div className='contact-card'>
                                 <span><FaFax /></span>
@@ -126,8 +130,8 @@ const ContactPage = () => {
                                 <p><span>Working Hours:</span> Monday-friday</p>
                             </div>
                             <div className='contact-card bottom'>
-                            <p>Social Links: </p>
-                                <a href='#'><AiOutlineLinkedin /></a>
+                                <p>Social Links: </p>
+                                <a href='https://www.linkedin.com/company/101000873'><AiOutlineLinkedin /></a>
                                 <a href='#'><FiTwitter /></a>
                                 <a href='#'><AiOutlineFacebook /></a>
                                 <a href='#'><CgWebsite /></a>

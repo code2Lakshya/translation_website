@@ -1,11 +1,7 @@
 import { useEffect } from 'react';
 import videosrc from '../../assets/culture.mp4';
-import { values } from '../../utils/variable';
-import CardCultural from './CArd/CardCultural';
-import './CulturePage.css';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-import logo1 from '../../assets/innovation.jpg';
 import logo2 from '../../assets/diverse.jpg';
 
 const CulturePage = () => {
@@ -37,29 +33,8 @@ const CulturePage = () => {
                 </div>
             </section>
 
-            <section id='our-values'>
-                <div className='values-wrapper'>
-                <div className="projects-heading">
-                    <span className="upper"></span>
-                    <h1>Our Values</h1>
-                    <span className="lower"></span>
-                </div>
-                    <p>
-                        Our core values guide every aspect of our work, from project management to client relationships.
-                        We hold ourselves to the highest standards of:
-                    </p>
-                    <div className='value-cards'>
-                        {
-                            values.map((item, index) => <CardCultural item={item} key={index} index={index} />)
-                        }
-                    </div>
-                </div>
-            </section>
-
-            <section className='innovation-container wrapper' id='innovation'>
-                <div className='content'>
-                <LazyLoadImage src={logo1} alt='logo1' effect='blur' />
-                    <div className='about-intro inner'>
+            <section className='innovation-container about-history-wrapper mb' id='innovation'>
+                    <div className='about-intro inner about-history'>
                         <h2>Innovation</h2>
                         <p>
                         In a rapidly evolving global landscape, staying at the forefront of technology and trends is crucial. We constantly 
@@ -68,7 +43,6 @@ const CulturePage = () => {
                         markets
                         </p>
                     </div>
-                </div>
             </section>
 
 

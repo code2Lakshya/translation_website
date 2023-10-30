@@ -1,5 +1,5 @@
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import logo from '../../assets/logo.jpeg';
+import logo from '../../assets/logo3.jpeg';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import './Navbar.css';
 import { AiOutlineMenu } from 'react-icons/ai';
@@ -21,23 +21,21 @@ const Navbar = () => {
                     <li><Link to='/' ><span className="bottom">Home</span></Link></li>
 
                     <li>
-                            <HoverList heading='About Us' list={['Introduction', 'Our History', 'Our Team']} route='/about' />
+                        <HoverList heading='About Us' list={['Who we are', 'History', 'Team', 'Values', 'Mission', 'Vision']} route='/about' />
                     </li>
 
                     <li>
-                            <HoverList heading='Services' list={['Translation Services', 'Localization Services', 'Interpretation Services', 'Cultural Consulting']} route='/services' />
+                        <HoverList heading='Services' list={['Translation Services', 'Localization Services', 'Interpretation Services', 'Cultural Consulting', 'E-Learning', 'Learning Management System']} route='/services' />
                     </li>
 
                     <li>
-                            <HoverList heading='Mission' list={['Our Mission', 'Our Vision']} route='/mission' />
+                        <HoverList heading='Culture' list={['Diversity and Inclusion', 'Innovation']} route='/culture' />
                     </li>
 
-                    <li>
-                            <HoverList heading='Culture' list={['Diversity and Inclusion', 'Our Values', 'Innovation']} route='/culture'/>
-                    </li>
+                    <li><Link to='/blogs'>Blogs</Link></li>
 
                     <li>
-                    <Link to='/contact'><span className="bottom">Contact Us</span></Link></li>
+                        <Link to='/contact'><span className="bottom">Contact Us</span></Link></li>
 
                     <li onClick={() => setShowMenu(false)}><RxCross1 /></li>
 

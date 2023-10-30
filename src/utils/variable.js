@@ -48,4 +48,31 @@ export const values=[
         subHeading: 'We operate with transparency, honesty, and a strong ethical code.',
         desc: "Integrity is a core value that we hold dear. We operate with transparency, honesty, and a strong ethical code. Our clients trust us with their most sensitive and confidential materials, and we take that trust seriously. We maintain the highest standards of integrity in every aspect of our work, from client relationships to data security."    
     }
+];
+
+export const blogCards=[
+    {
+        heading: 'Access to a Global Audience',
+        desc:'E-Learning platforms that offer content in multiple languages can reach a broader and more diverse audience. By providing translated courses, organizations open doors to learners who might otherwise be excluded due to language barriers.'
+    },
+    {
+        heading: 'Enhancing Comprehension',
+        desc:"Effective eLearning hinges on the learner's ability to understand and engage with the content. Accurate translation ensures that the material is not just accessible but comprehensible. It takes into account cultural nuances and context, making learning more engaging and effective."
+    },
+    {
+        heading: 'Adaptation to Local Needs',
+        desc:"Different regions have unique educational requirements and preferences. Multilingual translation allows content to be adapted to cater to these local needs, ensuring relevance and relatability."
+    },
+    {
+        heading: 'Fostering Inclusivity',
+        desc:"Inclusive education is a global goal. Multilingual translation removes linguistic barriers, creating a more inclusive learning environment. Learners can access content in their preferred language, promoting a sense of belonging and participation."
+    },
+    {
+        heading: 'Supporting Global Workforces',
+        desc:"For organizations with a global workforce, multilingual eLearning is indispensable. It ensures consistent training and knowledge dissemination across different regions, helping companies maintain quality standards and compliance."
+    },
+    {
+        heading: 'Global Collaboration',
+        desc:"E-Learning has opened the door to international collaboration in academia and industry. Multilingual translation helps facilitate this collaboration, breaking down communication barriers and encouraging cross-border knowledge exchange."
+    }
 ]

@@ -4,6 +4,11 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import logo1 from '../../assets/introduction.jpeg';
 import logo2 from '../../assets/team.jpeg'
+import mission from '../../assets/mission.jpeg';
+import { values } from '../../utils/variable';
+import CardCultural from './CArd/CardCultural';
+import './AboutPage.css';
+
 
 const AboutPage = () => {
 
@@ -19,7 +24,7 @@ const AboutPage = () => {
                 <p>We have a vast history for digital solutions</p>
             </div>
 
-            <section className='about-intro-wrapper wrapper' id='introduction'>
+            <section className='about-intro-wrapper wrapper' id='who-we-are'>
                 <div className='content'>
                     <LazyLoadImage src={logo1} alt='logo1' effect='blur' />
                     <div className='about-intro inner'>
@@ -36,14 +41,14 @@ const AboutPage = () => {
                 </div>
             </section>
 
-            <section className='about-history-wrapper ' id='our-history'>
+            <section className='about-history-wrapper ' id='history'>
                 <div className='about-history '>
                     <h2>Our History :</h2>
                     <p>Established in 2023 ,  Aviral Digital Solutions  has grown from a small startup into a leading translation and localization service provider. Over the years, we've helped countless businesses overcome language and cultural barriers to expand their reach and succeed on a global scale. Our journey has been defined by a commitment to excellence and a passion for promoting understanding and cooperation across borders.</p>
                 </div>
             </section>
 
-            <section className='about-team-wrapper wrapper' id='our-team'>
+            <section className='about-team-wrapper wrapper' id='team'>
                 <div className='content'>
                     <LazyLoadImage src={logo2} alt='logo2' effect='blur' />
                     <div className='about-team inner'>
@@ -58,6 +63,49 @@ const AboutPage = () => {
                             The collective knowledge, commitment, and passion of our team ensure that we consistently deliver high-quality services that exceed our clients' expectations. Our team's dedication and expertise form the bedrock of our success and the reason why clients from around the world trust us with their translation and localization needs.
                         </p>
                     </div>
+                </div>
+            </section>
+
+            <section id='values'>
+                <div className='values-wrapper'>
+                <div className="projects-heading">
+                    <span className="upper"></span>
+                    <h1>Our Values</h1>
+                    <span className="lower"></span>
+                </div>
+                    <p>
+                        Our core values guide every aspect of our work, from project management to client relationships.
+                        We hold ourselves to the highest standards of:
+                    </p>
+                    <div className='value-cards'>
+                        {
+                            values.map((item, index) => <CardCultural item={item} key={index} index={index} />)
+                        }
+                    </div>
+                </div>
+            </section>
+
+            <section className='mission wrapper' id='mission'>
+                <div className='content'>
+                    <LazyLoadImage src={mission} alt='logo1' effect='blur' />
+                    <div className='about-intro inner'>
+                        <h2>Our Mission</h2>
+                        <p>At Aviral Digital Soiutions, our mission is to break down language and cultural barriers, enabling individuals and
+                            businesses to connect, collaborate, and thrive in a diverse world. We strive to deliver language solutions that not
+                            only transcend words but also foster understanding, respect, and trust.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section className='vision about-history-wrapper my mb' id='vision'>
+                <div className='about-history '>
+                    <h2>Our Vision</h2>
+                   <p>
+                   Our vision is to be the global leader in translation and localization services, setting the standard for 
+                   excellence, innovation, and cultural sensitivity. We aim to be the driving force behind the success of 
+                   businesses operating in a globalized world and contribute to a more connected, harmonious global society.
+                   </p>
                 </div>
             </section>
 

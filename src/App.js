@@ -8,9 +8,9 @@ import ErrorPage from './pages/ErrorPage/ErrorPage';
 
 const AboutPage = lazy(() => import('./pages/AboutPage/AboutPage'));
 const ServicesPage = lazy(() => import('./pages/ServicesPage/ServicesPage'));
-const MissionPage = lazy(() => import('./pages/MissionPage/MissionPage'));
 const CulturePage=lazy(()=>import('./pages/CulturePage/CulturePage'));
 const ContactPage=lazy(()=>import('./pages/ContactPage/ContactPage'));
+const BlogsPage=lazy(()=>import('./pages/BlogsPage/BlogsPage'));
 
 function App() {
   return (
@@ -22,8 +22,8 @@ function App() {
         <Route path='/' element={<HomePage />} />
         <Route path='/about' element={<Suspense fallback={<Loader />}><AboutPage /></Suspense>} />
         <Route path='/services' element={<Suspense fallback={<Loader />}><ServicesPage /></Suspense>} />
-        <Route path='/mission' element={<Suspense fallback={<Loader />}><MissionPage /></Suspense>} />
         <Route path='/culture' element={<Suspense fallback={<Loader />}><CulturePage /></Suspense>} />
+        <Route path='/blogs' element={<Suspense fallback={<Loader />}><BlogsPage /></Suspense>} />
         <Route path='/contact' element={<Suspense fallback={<Loader />}><ContactPage /></Suspense>} />
         <Route path='*' element={<ErrorPage />} />
       </Routes>
