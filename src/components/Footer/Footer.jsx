@@ -16,8 +16,8 @@ const Footer = () => {
                         | All rights reserved
                     </p>
                     <div className="footer-icons">
-                        <a href='#'><FiFacebook /></a>
-                        <a href='#'><BsInstagram /></a>
+                        <a href='https://www.facebook.com/profile.php?id=61552943792273&mibextid=ZbWKwL'><FiFacebook /></a>
+                        <a href='https://instagram.com/aviraldigitalsolutions?igshid=MzMyNGUyNmU2YQ=='><BsInstagram /></a>
                         <a href='https://www.linkedin.com/company/101000873'><AiOutlineLinkedin /></a>
                     </div>
                 </div>

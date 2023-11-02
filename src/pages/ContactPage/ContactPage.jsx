@@ -4,7 +4,7 @@ import { AiOutlineSend, AiOutlineMail, AiOutlinePhone, AiOutlineLinkedin, AiOutl
 import { CiLocationArrow1 } from 'react-icons/ci';
 import { FaFax } from 'react-icons/fa';
 import { MdWorkOutline } from 'react-icons/md';
-import { FiTwitter } from 'react-icons/fi';
+import { BsInstagram } from 'react-icons/bs';
 import { CgWebsite } from 'react-icons/cg';
 import './ContactPage.css';
 import toast from 'react-hot-toast';
@@ -115,15 +115,11 @@ const ContactPage = () => {
                             </div>
                             <div className='contact-card'>
                                 <span><AiOutlineMail /></span>
-                                <p>[Email Address]</p>
+                                <p>info@aviraldigital.in</p>
                             </div>
                             <div className='contact-card'>
                                 <span><AiOutlinePhone /></span>
                                 <p>+91 8423638997</p>
-                            </div>
-                            <div className='contact-card'>
-                                <span><FaFax /></span>
-                                <p>[Fax Number]</p>
                             </div>
                             <div className='contact-card'>
                                 <span><MdWorkOutline /></span>
@@ -132,9 +128,8 @@ const ContactPage = () => {
                             <div className='contact-card bottom'>
                                 <p>Social Links: </p>
                                 <a href='https://www.linkedin.com/company/101000873'><AiOutlineLinkedin /></a>
-                                <a href='#'><FiTwitter /></a>
-                                <a href='#'><AiOutlineFacebook /></a>
-                                <a href='#'><CgWebsite /></a>
+                                <a href='https://instagram.com/aviraldigitalsolutions?igshid=MzMyNGUyNmU2YQ=='><BsInstagram /></a>
+                                <a href='https://www.facebook.com/profile.php?id=61552943792273&mibextid=ZbWKwL'><AiOutlineFacebook /></a>
                             </div>
                         </div>
                     </div>
