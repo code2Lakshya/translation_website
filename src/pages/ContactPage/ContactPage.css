@@ -184,6 +184,9 @@ form button span {
     font-weight: 400;
     font-weight: 500;
 }
+#textarea{
+    resize:none;
+}
 
 .bottom {
     display: flex;

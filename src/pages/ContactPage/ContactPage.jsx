@@ -97,7 +97,7 @@ const ContactPage = () => {
                                 </div>
                                 <div className='message formfield'>
                                     <p>Message:</p>
-                                    <textarea rows='10' cols='20' value={userInput?.message} onChange={changeHandler} name='message' ></textarea>
+                                    <textarea rows='10' cols='20' id='textarea' value={userInput?.message} onChange={changeHandler} name='message'></textarea>
                                 </div>
                                 <button type='submit'>Send Message <span><AiOutlineSend /></span></button>
                             </form>

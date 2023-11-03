@@ -8,6 +8,7 @@
 body{
   font-family: 'IBM Plex Sans', sans-serif;
   overflow-x:hidden;
+  text-align: justify;
 }
 .about-heading{
   width: 100%;
