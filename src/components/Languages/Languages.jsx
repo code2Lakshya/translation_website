@@ -10,7 +10,7 @@ const Languages = () => {
             <div className='language-wrapper'>
                 <LazyLoadImage src={image} alt='languages' effect='blur' />
                 <div className='languages-content'>
-                    <h1>Explore our Language Swags: </h1>
+                    <h1 className='text-left'>Explore our Language Swags: </h1>
                     <ul>
                         <li><span>Expert Linguistics: </span>Our team comprises language enthusiasts who breathe life into every word. </li>
                         <li><span>Cultural Nuances:</span> We don’t just translate, we capture the essence, ensuring your message shines through intact. </li>

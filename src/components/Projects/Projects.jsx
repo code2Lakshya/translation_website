@@ -9,10 +9,10 @@ const Projects = () => {
             <div className="projects-wrapper">
                 <div className="projects-heading">
                     <span className="upper"></span>
-                    <h1>Projects</h1>
+                    <h1 className="text-left">Projects</h1>
                     <span className="lower"></span>
                 </div>
-                <p>Some of our Projects.</p>
+                <p className="text-left">Some of our Projects.</p>
                 <div className="projects-cards">
                     {
                         v.map((item, index) => <Card data={item} key={index} />)

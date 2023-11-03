@@ -19,15 +19,15 @@ const ServicesPage = () => {
         <div className="sericesPage-container">
             <div className="services-heading about-heading">
                 <video src={services} autoPlay loop ></video>
-                <p>Services</p>
-                <p>We provide a wide range of services</p>
+                <p className="text-left">Services</p>
+                <p className="text-left">We provide a wide range of services</p>
             </div>
 
             <section className='services-translation wrapper' id='translation-services'>
                 <div className='content'>
                     <LazyLoadImage src={translation} alt='logo1' effect='blur' />
                     <div className='about-intro inner'>
-                        <h2>Translation Services</h2>
+                        <h2 className="text-left">Translation Services</h2>
                         <p>
                             <p>Translation is more than just converting words from one language to another; it's about capturing the
                                 essence and nuances of the source text while ensuring it resonates with the target audience.
@@ -49,7 +49,7 @@ const ServicesPage = () => {
             <section className='services-localization about-history-wrapper bg' id='localization-services'>
                 <LazyLoadImage src={logo3} alt='logo3' effect="blur" />
                 <div className='about-history '>
-                    <h2>Localization Services</h2>
+                    <h2 className="text-left">Localization Services</h2>
                     <p>
                         Successful globalization demands more than mere translation. It requires adapting content, products, and
                         services to local preferences, customs, and market dynamics. Our localization services encompass website
@@ -65,7 +65,7 @@ const ServicesPage = () => {
                 <div className='content right'>
                     <LazyLoadImage src={interpretation} alt='logo1' effect='blur' />
                     <div className='about-intro inner'>
-                        <h2>Interpretation Services</h2>
+                        <h2 className="text-left">Interpretation Services</h2>
                         <p>
                             In today's fast-paced global business environment, effective interpretation services are critical.
                             Whether it's a business meeting, conference, legal proceedings, or a healthcare appointment, our
@@ -81,7 +81,7 @@ const ServicesPage = () => {
             <section className='services-cultural about-history-wrapper bg' id='cultural-consulting'>
                 <LazyLoadImage src={logo4} alt='logo3' effect="blur" />
                 <div className='about-history'>
-                    <h2>Cultural Consulting</h2>
+                    <h2 className="text-left">Cultural Consulting</h2>
                     <p>
                         At Aviral Digital Solutions, we offer cultural consulting services that help you navigate the complexities
                         of foreign markets. Our cultural consultants provide insights and guidance on cultural etiquette, market
@@ -95,7 +95,7 @@ const ServicesPage = () => {
                 <div className='content'>
                     <LazyLoadImage src={eLearning} alt='eLearning' effect='blur' />
                     <div className='about-intro inner'>
-                        <h2>E-Learning</h2>
+                        <h2 className="text-left">E-Learning</h2>
                         <p>
                             At Aviral Digital Solutions, we are your partner in the world of online learning and training. We aim at empowering
                             individuals and organizations with cutting-edge eLearning solutions. We specialize in creating immersive
@@ -110,7 +110,7 @@ const ServicesPage = () => {
             <section className='services-cultural about-history-wrapper bg mb' id='learning-management-system'>
                 <LazyLoadImage src={lms} alt='lms' effect="blur" />
                 <div className='about-history'>
-                    <h2>Learning Management System (L.M.S.)</h2>
+                    <h2 className="text-left">Learning Management System (L.M.S.)</h2>
                     <p>
                         Our Learning Management System simplifies the administration of eLearning. From tracking progress to assessing
                         performance, we make it all effortless. Our Learning Management System makes training and development

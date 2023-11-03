@@ -14,7 +14,7 @@ const BlogsPage = () => {
     }, [])
     return (
         <div className="blogs-page about-page">
-            <div className="blogs-hero about-heading">
+            <div className="blogs-hero about-heading text-left">
                 <video src={blogssrc} autoPlay loop></video>
                 <p>Blogs</p>
                 <p>The E-Learning Revolution</p>
@@ -22,7 +22,7 @@ const BlogsPage = () => {
 
             <section className='about-history-wrapper eLearning' >
                 <div className='about-history'>
-                    <h2>The E-Learning Revolution</h2>
+                    <h2 className="text-left">The E-Learning Revolution</h2>
                     <p>
                         E-Learning has witnessed remarkable growth in recent years, transcending geographical boundaries and challenging
                         traditional education paradigms. This approach to learning offers the flexibility to adapt to individual needs
@@ -36,7 +36,7 @@ const BlogsPage = () => {
                 <div className='content'>
                     <LazyLoadImage src={articlesSrc} alt='logo' effect='blur' />
                     <div className='about-intro inner'>
-                        <h2>Blogs/Articles</h2>
+                        <h2 className="text-left">Blogs/Articles</h2>
                         <p>
                             In an increasingly interconnected world, eLearning has emerged as a transformative force in education,
                             training, and skill development. As the digital landscape evolves, the importance of bridging linguistic
@@ -50,7 +50,7 @@ const BlogsPage = () => {
 
             <section className='challenges-container'>
                 <div className='challenges-wrapper'>
-                    <h1>The Power of Multilingual Translation</h1>
+                    <h1 className='text-left'>The Power of Multilingual Translation</h1>
                     <p>
                         Multilingual translation in eLearning is not merely about converting content from one language to another, it is
                         about ensuring that the learning experience remains rich and meaningful for learners across diverse linguistic and
@@ -60,7 +60,7 @@ const BlogsPage = () => {
                         {
                             blogCards.map((item, index) => <div className='challenge-card' key={index}>
                                 <span>0{index+1}</span>
-                                <div className='card-content'>
+                                <div className='card-content text-left'>
                                     <h3>{item.heading}</h3>
                                     <p>{item.desc}</p>
                                 </div>
@@ -74,7 +74,7 @@ const BlogsPage = () => {
                 <div className='content right'>
                     <LazyLoadImage src={challengeSrc} alt='logo1' effect='blur' />
                     <div className='about-intro inner'>
-                        <h2>Challenges and Solutions</h2>
+                        <h2 className="text-left">Challenges and Solutions</h2>
                         <p>
                             While the role of multilingual translation in eLearning is undeniable, it is not without challenges.
                             These include cost implications, maintaining content consistency, and ensuring quality in translation.

@@ -12,11 +12,16 @@ const Missions = () => {
                 <div className="about-content">
                     <div className="aabout-upper">
                         <h1>Mission</h1>
-                        <p>Our mission is to break down language barriers and foster understanding by providing top-notch translation services in a multitude of Indian languages. </p>
+                        <p>
+                        Our mission is to break down language barriers and foster understanding by 
+                        providing top-notch translation services in a multitude of Indian languages. 
+                        </p>
                     </div>
                     <div className="about-lower">
                         <h1>Vision</h1>
-                        <p>Our vision is to be the cornerstone of communication in India, connecting businesses, communities and individuals through accurate and culturally sensitive translations. </p>
+                        <p>Our vision is to be the cornerstone of communication in India, connecting 
+                        businesses, communities and individuals through accurate and culturally
+                         sensitive translations. </p>
                     </div>
                 </div>
             </div>

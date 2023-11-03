@@ -9,6 +9,13 @@ body{
   font-family: 'IBM Plex Sans', sans-serif;
   overflow-x:hidden;
   text-align: justify;
+  word-spacing: -0.5px;
+}
+.text-center{
+  text-align: center;
+}
+.text-left{
+  text-align: left;
 }
 .about-heading{
   width: 100%;

@@ -13,7 +13,7 @@ const Navbar = () => {
     const [showMenu, setShowMenu] = useState(false);
 
     return (
-        <header>
+        <header className="text-left">
             <nav>
                 <Link to='/'><LazyLoadImage src={logo} alt='logo' effect='blur' /></Link>
                 <ul className={`${showMenu ? 'active' : ''}`} onClick={() => setShowMenu(false)}>

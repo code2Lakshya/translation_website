@@ -12,7 +12,7 @@ const CulturePage = () => {
 
     return (
         <div className="culture-container">
-            <div className="culture-page about-heading">
+            <div className="culture-page about-heading text-left">
                 <video src={videosrc} autoPlay loop ></video>
                 <p>Culture</p>
                 <p>We provide supportive culture in all aspects.</p>
@@ -22,7 +22,7 @@ const CulturePage = () => {
                 <div className='content right'>
                 <LazyLoadImage src={logo2} alt='logo2' effect='blur' />
                     <div className='about-intro inner'>
-                        <h2>Diversity and Inclusion</h2>
+                        <h2 className='text-left'>Diversity and Inclusion</h2>
                         <p>
                         Diversity and inclusion are not just buzzwords at Aviral Digital Solutions; they are fundamental to our identity. 
                         We believe that embracing a variety of backgrounds, cultures, and perspectives enriches our work and enables us to 

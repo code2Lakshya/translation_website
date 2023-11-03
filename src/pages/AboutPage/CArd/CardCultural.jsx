@@ -8,7 +8,7 @@ const [readmore,setReadMore]=useState(false);
 
     return (
         <div className="value-card">
-            <h1>{index + 1}. {item.heading}:</h1>
+            <h1 className="text-left">{index + 1}. {item.heading}:</h1>
             <p>{item.subHeading}</p>
             <p>{readmore ? item.desc: `${item.desc.slice(0,200)}...  `} 
             {

@@ -14,7 +14,7 @@ const Home = () => {
     return (
         <section id='home'>
         <video src={video} autoPlay loop></video>
-            <div className='inner-home'>
+            <div className='inner-home text-center'>
                 <h1>World Of Words</h1>
                 <p>A Gateway to seamless multilingual communication</p>
                 <p>
