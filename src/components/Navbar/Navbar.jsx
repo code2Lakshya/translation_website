@@ -1,5 +1,5 @@
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import logo from '../../assets/logo3.jpeg';
+import logo from '../../assets/Untitled-1.png';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import './Navbar.css';
 import { AiOutlineMenu } from 'react-icons/ai';
